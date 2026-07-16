@@ -23,6 +23,6 @@ public class armstrong_number {
             System.out.println("Not a Armstrong Number");
         }
 
-        
+    scan.close();    
     }
 }
