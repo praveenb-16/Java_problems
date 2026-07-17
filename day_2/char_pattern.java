@@ -14,6 +14,7 @@ public class char_pattern {
             }
             System.out.println();
         }
+        scan.close();
         }
 }
     
