@@ -16,7 +16,10 @@ public class reverse_array {
     System.out.println();  
     System.out.print("[");  
     for(int j=num-1; j>=0; j--){
-        System.out.print(arr[j] + ",");
+        System.out.print(arr[j]);
+        if (j > 0){
+            System.out.print(", ");
+        }
     }    
     System.out.print("]");
     scan.close();
