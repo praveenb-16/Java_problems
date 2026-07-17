@@ -12,13 +12,20 @@ public class maximum_num_in_array {
             arr[i] = scan.nextInt();
         }
         int max=0;
+        int second_max = 0;
         for (int i : arr){
             if (i>max){
+                second_max = max;
                 max = i;
+            }
+            else if(i > second_max && i != max){
+                second_max = i;
             }
         }
         System.out.println("Largest Element in the Array: ");
         System.out.println(max);
+        System.out.println("Second Largest Element in the Array: ");
+        System.out.println(second_max);
         scan.close();
     }
     
